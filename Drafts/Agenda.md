@@ -16,6 +16,7 @@ f. Rules (Indicators, Alert suppression, …)
 g. Security Baselines
 h. MDE Security Enforcement
 i. KQL Primer and useful queries
+j. Defender for Cloud Apps Integration
 
 ## Timetable
 
@@ -33,16 +34,66 @@ i. KQL Primer and useful queries
 
 ### Monday - Afternoon
 
+- Onboarding Devices
+  - Windows 11
+  - Windows Server
+  - Linux Serer
+  - Mac OS
+
 ### Tuesday - Morning
+
+- Roles and Permissions
+  - Classic
+  - Modern
+  
+- Protection - How it works
+  - Attack Surface Reduction
+  - Network Protection
+  - Device Control
+  - Controlled Folder Access
+  - Security Baselines
+- Protection - How to configure
+  - MDE security enforcement
+  - Intune
+  - PowerShell
 
 ### Tuesday - Afternoon
 
+- Protection tbc
+
 ### Wednesday - Morning
+
+- Advanced Security Features
+  - Windows Defender Application Control
+  - Windows Defender Exploit Guard
+  - Windows Defender Credential Guard
+  - Windows Defender System Guard
+
+- Device Investigation
 
 ### Wednesday - Afternoon
 
+- Device Actions
+  - Package collection
+  - App Restriction
+  - Isolation
+  - ...
+
 ### Thursday - Morning
 
+- Alert/Incident Investigation
+  - Alerts
+  - Suppression Rules
+  - Notification
+
+- Vulnerability Management
+
 ### Thursday - Afternoon
+
+- KQL Primer
+  - Data Flow Pipeline
+  - Basic Operators
+  - Joins
+  - MS Sentinel Integration
 
 ### Friday - Morning
