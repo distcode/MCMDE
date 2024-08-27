@@ -14,14 +14,19 @@ Select the operation system and follow the instructions under Item 1. In most ca
 
 After that, you have to choose your preferred _Deployment Method_.
 
-- Local script [:arrow_double_down:](#local-script)
-- Group policy [:arrow_double_down:](#group-policy)
-- Microsoft Endpoint Configuration Manager [:arrow_double_down:](#microsoft-endpoint-configuration-manger)
-- VDI onboarding script for non-persistent devices [:arrow_double_down:](#vdi-onboarding)
+- Local script [:arrow_down:](#local-script)
+- Group policy [:arrow_down:](#group-policy)
+- Microsoft Endpoint Configuration Manager [:arrow_down:](#microsoft-endpoint-configuration-manger)
+- VDI onboarding script for non-persistent devices [:arrow_down:](#vdi-onboarding)
+
+<details open>
+<summary><i>Details</i></summary>
 
 ### Local script
 
 tbd
+
+[back to top](#deployment-methods)
 
 ### Group policy
 
@@ -34,3 +39,5 @@ tbd
 ### VDI onboarding
 
 tbd
+
+</details>
