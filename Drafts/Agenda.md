@@ -37,7 +37,7 @@ j. Defender for Cloud Apps Integration
 - Onboarding Devices
   - Windows 11
   - Windows Server
-  - Linux Serer
+  - Linux Server
   - Mac OS
 
 ### Tuesday - Morning
