@@ -32,6 +32,8 @@ j. Defender for Cloud Apps Integration
   - Activating MDE
   - Overview MD XDR/MDE portal
 
+- Endpoint Zero Trust deployment
+
 ### Monday - Afternoon
 
 - Onboarding Devices
