@@ -99,3 +99,5 @@ Source:
 (3) Arbitrary code execution definition – Glossary - [NordVPN](https://nordvpn.com/cybersecurity/glossary/arbitrary-code-execution/).
 
 ## Category B
+
+## Category C
