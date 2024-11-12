@@ -1,14 +1,13 @@
-# Links
+# Infos for the course
 
-Godeploy
+**Godeploy**
 Link: https://lms.godeploy.it
 
-Fast Lane Remote Lab
-
+**Fast Lane Remote Lab**
 Use this app on your desktop
-*RemoteLabs3 Client*
-![RemoteLabs3 Client](./.images/RemoteLabsIcon.jpg)
+*RemoteLabs3 Client*: ![RemoteLabs3 Client](./.images/RemoteLabsIcon.jpg)
 
+Use your access code please:
 | Id | Name | Access Code |
 | --- | --- | --- |
 |1 |Seick |120004787 |
