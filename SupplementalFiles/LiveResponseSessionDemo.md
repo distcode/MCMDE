@@ -24,6 +24,7 @@ uploaded to C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection
 `run Script.ps1`
 run a script from library with parameters
 `run GetDriveInfo.ps1 -parameters "-Driveletter c"`
+
     ```PowerShell
     ## Demoscript
     param (
@@ -37,7 +38,9 @@ run a script from library with parameters
 `library delete Script.ps1`
 
 1. Registry
+Read registry key
 `registry HKLM\System\CurrentControlSet\Control\CrashControl`
+Read registry value
 `registry HKLM\System\CurrentControlSet\Control\CrashControl\\Dumpfile`
 
 1. Redirection
