@@ -3,8 +3,8 @@
 **GoDeploy**
 Link: <https://lms.godeploy.it>
 
-**Evaluation please**
+**Evaluation** under
 
-| Link | Password |
-| --- | --- |
-| <https://www.flane.de/eval> | *Provided on last day of course.* |
+Link: <https://www.flane.de/eval>
+
+Password: *Provided on last day of course.*
