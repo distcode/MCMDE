@@ -7,4 +7,4 @@ Link: <https://lms.godeploy.it>
 
 Link: <https://www.flane.de/eval>
 
-Password: *Provided on last day of course.*
+Password: 22P8KU1H
