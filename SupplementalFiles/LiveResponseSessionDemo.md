@@ -3,28 +3,47 @@
 Demonstration commands in a live response session in MDE
 
 1. Using Help
-`help`
-`help services`
+
+    ```bash
+    help
+    help services
+    ```
 
 1. find a file
-`findfile name-of-file.ext`
+
+    ```bash
+    findfile name-of-file.ext
+    ```
 
 1. get a file from device
-`getfile c:\folder\name-of-file.ext`
+
+    ```bash
+    getfile c:\folder\name-of-file.ext
+    ```
 
 1. put a file to the device
 upload the file via portal to the library first
-Get content of library
-`library`
-send file to device
-`putfile AnyFile.txt -keep`
-uploaded to C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\
+
+    ```bash
+    # Get content of library
+    library
+    
+    # send file to device
+    putfile AnyFile.txt -keep
+    
+    # uploaded to C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\
 
 1. run a script from library
-`run Script.ps1`
-run a script from library with parameters
-`run GetDriveInfo.ps1 -parameters "-Driveletter c"`
 
+    ```bash
+    run Script.ps1
+    
+    #run a script from library with parameters
+    run GetDriveInfo.ps1 -parameters "-Driveletter c"
+    ```
+    
+    This is the script
+    
     ```PowerShell
     ## Demoscript
     param (
@@ -35,15 +54,24 @@ run a script from library with parameters
     ```
 
 1. clean up library
-`library delete Script.ps1`
+
+    ```bash
+    library delete Script.ps1
+    ```
 
 1. Registry
-Read registry key
-`registry HKLM\System\CurrentControlSet\Control\CrashControl`
-Read registry value
-`registry HKLM\System\CurrentControlSet\Control\CrashControl\\Dumpfile`
+
+    ```bash
+    # Read registry key
+    registry HKLM\System\CurrentControlSet\Control\CrashControl
+    # Read registry value
+    registry HKLM\System\CurrentControlSet\Control\CrashControl\\Dumpfile
+    ```
 
 1. Redirection
-`persistence`
-`persistence > myResult.txt`
-myResult.txt is downloaded automatically
+
+    ```bash
+    persistence
+    persistence > myResult.txt
+    # myResult.txt is downloaded automatically
+    ```
