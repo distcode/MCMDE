@@ -57,10 +57,10 @@ Add-MpPreference -AttackSurfaceReductionRules_Actions AuditMode -AttackSurfaceRe
 # Use advanced protection against ransomware
 Add-MpPreference -AttackSurfaceReductionRules_Actions AuditMode -AttackSurfaceReductionRules_Ids c1db55ab-c21a-4637-bb3f-a12568109d35
 
-# Block rebooting machine in Safe Mode (preview)
+# Block rebooting machine in Safe Mode
 Add-MpPreference -AttackSurfaceReductionRules_Actions AuditMode -AttackSurfaceReductionRules_Ids 33ddedf1-c6e0-47cb-833e-de6133960387
 
-# Block use of copied or impersonated system tools (preview)
+# Block use of copied or impersonated system tools
 Add-MpPreference -AttackSurfaceReductionRules_Actions AuditMode -AttackSurfaceReductionRules_Ids c0033c00-d16d-4114-a5a0-dc9b3a7d2ceb
 
 # Block Webshell creation for Servers
