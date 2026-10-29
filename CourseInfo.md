@@ -3,8 +3,8 @@
 **GoDeploy**
 Link: <https://lms.godeploy.it>
 
-**Evaluation** under
+**Evaluation
 
 Link: <https://www.flane.de/eval>
 
-Password: 2CQ3NV2L
+Password: 26R4UM9E
