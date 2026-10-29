@@ -4,31 +4,39 @@ This guide shows you how to use datatypes, functions and more.
 
 Content
 
-+ [Datatypes](#datatypes)
-  + [datetime](#datetime)
-  + [timespan](#timespan)
-+ [Table operators](#table-operators)
-  + [Operator `union`](#operator-union)
-  + [Operator `join`](#operator-join)
-  + [Operator `evaluate`](#operator-evaluate)
-  + [Operator `parse`](#operator-parse)
-  + [Importing external data](#importing-external-data)
-  + [Operator `count`](#operator-count)
-  + [Operator `getschema`](#operator-getschema)
-+ [Scalar Functions](#scalar-functions)
-  + [String Functions](#string-functions)
-  + [`extract()`](#extract)
-+ [Aggregation Functions](#aggregation-functions)
-  + [`make_list()` vs. `make_set()`](#make_list-vs-make_set)
-+ [User defined functions](#user-defined-functions)
-  + [Scalar UDFs](#scalar-udfs)
-  + [Tabular UDFs](#tabular-udfs)
-+ [Techniques](#techniques)
-  + [Working with arrays](#working-with-arrays)
-  + [Working with JSON objects / property bags](#working-with-json-objects--property-bags)
-  + [IPv4 lookup](#ipv4-lookup)
-  + [Working with multiple workspaces](#working-with-multiple-workspaces)
-  + [Function `materialize()`](#function-materialize)
+- [KQL - Advanced](#kql---advanced)
+  - [Datatypes](#datatypes)
+    - [datetime](#datetime)
+    - [timespan](#timespan)
+  - [Table operators](#table-operators)
+    - [Operator `union`](#operator-union)
+    - [Operator `join`](#operator-join)
+    - [Operator `evaluate`](#operator-evaluate)
+    - [Operator `parse`](#operator-parse)
+    - [Importing external data](#importing-external-data)
+    - [Operator `count`](#operator-count)
+    - [Operator `getschema`](#operator-getschema)
+  - [Scalar Functions](#scalar-functions)
+    - [String Functions](#string-functions)
+    - [`extract()`](#extract)
+  - [Aggregation Functions](#aggregation-functions)
+    - [`make_list()` vs. `make_set()`](#make_list-vs-make_set)
+    - [`arg_max()`](#arg_max)
+  - [User defined functions](#user-defined-functions)
+    - [Scalar UDFs](#scalar-udfs)
+    - [Tabular UDFs](#tabular-udfs)
+  - [Techniques](#techniques)
+    - [Working with arrays](#working-with-arrays)
+      - [Create an array](#create-an-array)
+      - [Get values of an array](#get-values-of-an-array)
+      - [Additional array functions](#additional-array-functions)
+      - [Arrays saved in columns of a table](#arrays-saved-in-columns-of-a-table)
+    - [Working with JSON objects / property bags](#working-with-json-objects--property-bags)
+      - [Create or get a JSON object / property bag](#create-or-get-a-json-object--property-bag)
+      - [Working with JSON objects / property bag](#working-with-json-objects--property-bag)
+    - [IPv4 lookup](#ipv4-lookup)
+    - [Working with multiple workspaces](#working-with-multiple-workspaces)
+    - [Function `materialize()`](#function-materialize)
 
 ---
 
@@ -349,6 +357,31 @@ Use the `make_set()` function to avoid doublets:
 ```csl
 datatable (Planets:string) ["Jupiter","Mercury","Venus","Mercury"]
 | summarize PlanetsArray = make_set(Planets)
+```
+
+### `arg_max()`
+
+This functions brings the a single record of a record group.
+
+Examples:
+
+```csl
+// Host with most CPUs of a location
+let myHostsDetailed = datatable (Hostname:string, Location:string , CPU:int, RAMGB:int ) [
+    "Mercury", "Graz", 24, 128,
+    "Venus", "Berlin", 18, 64,
+    "Earth", "Paris", 48, 96,
+    "Mars", "Graz", 24, 128,
+    "Jupiter", "Paris", 96, 196,
+    "Saturn", "Graz", 48, 96,
+    "Uranos", "Berlin", 48, 96,
+    "Neptune", "Berlin", 24, 128,];
+myHostsDetailed
+| summarize arg_max(CPU,*) by Location
+
+// Last record of each device in table DeviceNetworkInfo 
+DeviceNetworkInfo
+| summarize arg_max(Timestamp,*) by DeviceName
 ```
 
 [top](#kql---advanced)
